@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/faviconico.png" type="image/x-icon">
     <title>Muhammad Anees-Mechatronics & Control Engineering</title>
 
     <!-- font awesome cdn link  -->
@@ -12,7 +13,9 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- download css file link  -->
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="button.html">
 
 </head>
 
@@ -28,6 +31,7 @@
     <!-- header section starts  -->
 
     <header>
+        
 
         <a href="https://github.com/Muhammad-Anees99" class="logo"> <span>Muhammad</span> Anees </a>
 
@@ -60,6 +64,7 @@
                 Engineering and Technology, Lahore. <br>
                 Alpha Microsoft Learn Student Ambassador at Microsoft</p>
             <a href="#about" class="btn">about me</a>
+            
         </div>
 
         <div class="image">
@@ -111,9 +116,46 @@
                         <p> <span> country : </span> Pakistan </p>
                     </div>
                 </div>
-                <div class="btn1"><a href="Muhammad Anees CV.pdf" class="btn" download>Download CV</a>
-                    <a href="mailto:m.aneesmct@email.com" class="btn">Hire Me</a>
-                </div>
+                <style>
+                    .button-container {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
+ 
+                    .button-86 {
+                      margin: 0 70px; /* Adjust the margin as needed for spacing */
+                    }
+                  </style>
+                  
+                  <div class="button-container">
+                    
+                    <div class="container">
+                        <button class="fas fa-arrow-alt-circle-down btn" onclick="downloadCV()">
+                            <span class="txt">Download CV</span>
+                        </button>
+                        <div id="succes">
+                            <a class="fas fa-times-circle" href="#"></a>
+                            <div class="fas fa-check status"><span class="txt">Done</span></div>
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                    <a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank"></a>
+                    
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add jQuery -->
+                    <script>
+                        function downloadCV() {
+                            var link = document.createElement('a');
+                            link.href = 'Muhammad Anees CV.pdf';
+                            link.download = 'Muhammad Anees CV.pdf';
+                            link.click();
+                        }
+                    </script>
+                    
+                    
+                    
+                    <button class="button-86" onclick="location.href='mailto:m.aneesmct@email.com';" role="button">Hire Me</button>
+                  </div>
 
 
 
@@ -164,58 +206,51 @@
 
     </section>
     <!-- service section starts  -->
+<!-- HTML -->
+<section class="about" id="skill">
+    <h1 class="heading"> <span><i class="fas fa-cogs skill-icon"></i></span> skills </h1>
 
-
-    <section class="about" id="skill">
-
-        <h1 class="heading"> <span><i class="fas fa-cogs skill-icon"></i>
-            </span> skills </h1>
-
-        <div class="row-2">
-
-            <div class="skills">
-                <div class="progress">
-                    <h3> Problem Solving <span> 85% </span> </h3>
-                    <div class="bar"> <span></span> </div>
-                </div>
-                <div class="progress">
-                    <h3> Programming <span> 90% </span> </h3>
-                    <div class="bar"> <span></span> </div>
-                </div>
-                <div class="progress">
-                    <h3> Embedded Systems <span> 75% </span> </h3>
-                    <div class="bar"> <span></span> </div>
-                </div>
-                <div class="progress">
-                    <h3> PCB design <span> 75% </span> </h3>
-                    <div class="bar"> <span></span> </div>
-                </div>
+    <div class="row-2">
+        <div class="skills">
+            <div class="progress">
+                <h3> Problem Solving <span> 85% </span> </h3>
+                <div class="bar"> <span style="width: 85%;"></span> </div>
             </div>
+            <div class="progress">
+                <h3> Programming <span> 90% </span> </h3>
+                <div class="bar"> <span style="width: 90%;"></span> </div>
+            </div>
+            <div class="progress">
+                <h3> Embedded Systems <span> 75% </span> </h3>
+                <div class="bar"> <span style="width: 75%;"></span> </div>
+            </div>
+            <div class="progress">
+                <h3> PCB design <span> 75% </span> </h3>
+                <div class="bar"> <span style="width: 75%;"></span> </div>
+            </div>
+        </div>
 
-            <!--<div class="box-container">
-    
-        <div class="box">
-            <h3> >> 2+ </h3>
-            <p>years of experience</p>
+        <div class="box-container">
+            <div class="box">
+                <h3> >> 2+ </h3>
+                <p>years of experience</p>
+            </div>
+            <div class="box">
+                <h3> >> 250+ </h3>
+                <p>happy clients</p>
+            </div>
+            <div class="box">
+                <h3> >> 150+ </h3>
+                <p>projects completed</p>
+            </div>
+            <div class="box">
+                <h3> >> 12+ </h3>
+                <p>awards won</p>
+            </div>
         </div>
-        <div class="box">
-            <h3> >> 250+ </h3>
-            <p>happy clients</p>
-        </div>
-        <div class="box">
-            <h3> >> 150+ </h3>
-            <p>projects completed</p>
-        </div>
-        <div class="box">
-            <h3> >> 12+ </h3>
-            <p>awards won</p>
-        </div>
-    
     </div>
-    -->
-        </div>
+</section>
 
-    </section>
 
 
     <!-- service section starts  -->
@@ -310,8 +345,18 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="images/img-1.jpg" alt="">
-                <h3> project 01 </h3>
+                <img src="images/proj1.gif" alt="">
+                <h3>Bluetooth Smart Board & UI App</h3>
+                <div class="icons">
+                    <a href="https://github.com/Muhammad-Anees99/Bluetooth-App-Control-of-Electric-Board" class="fas fa-link"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/proj2.gif" alt="">
+                <h3>Dual-Actuator Destacking System</h3>
                 <div class="icons">
                     <a href="#" class="fas fa-link"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -320,8 +365,28 @@
             </div>
 
             <div class="box">
-                <img src="images/img-2.jpg" alt="">
-                <h3> project 02 </h3>
+                <img src="images/proj3.gif" alt="">
+                <h3>Auto Emergency Ventilator System</h3>
+                <div class="icons">
+                    <a href="https://github.com/Muhammad-Anees99/Ambulator" class="fas fa-link"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/proj4.gif" alt="">
+                <h3>Real-Time Pose Detection & Track</h3>
+                <div class="icons">
+                    <a href="https://github.com/Muhammad-Anees99/Salah-Analysis-using-Mediapipe-and-OpenCV-with-Creative-and-User-Friendly-GUI" class="fas fa-link"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/proj6.gif" alt="">
+                <h3>Maze Solving-Genetic Algorithm</h3>
                 <div class="icons">
                     <a href="#" class="fas fa-link"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -330,38 +395,8 @@
             </div>
 
             <div class="box">
-                <img src="images/img-3.jpg" alt="">
-                <h3> project 03 </h3>
-                <div class="icons">
-                    <a href="#" class="fas fa-link"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img-4.jpg" alt="">
-                <h3> project 04 </h3>
-                <div class="icons">
-                    <a href="#" class="fas fa-link"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img-5.jpg" alt="">
-                <h3> project 05 </h3>
-                <div class="icons">
-                    <a href="#" class="fas fa-link"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/img-6.jpg" alt="">
-                <h3> project 06 </h3>
+                <img src="images/proj5.gif" alt="">
+                <h3>Path Planning-Genetic Algorithm</h3>
                 <div class="icons">
                     <a href="#" class="fas fa-link"></a>
                     <a href="#" class="fas fa-share"></a>
@@ -375,80 +410,75 @@
 
     <!-- portfolio section ends -->
 
-    <!-- contact section starts  -->
+<!-- contact section starts -->
 
-    <section class="contact" id="contact">
+<section class="contact" id="contact">
 
+    <h1 class="heading"><i class="fas fa-envelope contact-me-icon"></i> contact <span> me </span> </h1>
 
-        <h1 class="heading"><i class="fas fa-envelope contact-me-icon"></i> contact <span> me </span> </h1>
+    <div class="icons-container">
 
-        <div class="icons-container">
-
-            <div class="icons">
-                <i class="fas fa-envelope"></i>
-                <h3>email address</h3>
-
-                <body>
-
-                    <p class="small-letters">
-                        m.aneesmct@gmail.com
-                    </p>
-
-            </div>
-
-            <div class="icons">
-                <i class="fas fa-phone"></i>
-                <h3>contact number</h3>
-                <p class="small-letters">+923047604312</p>
-            </div>
-
-            <div class="icons">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>address</h3>
-                <p>Zubair Hall,University of Engineering and Technology, Lahore, </p>
-            </div>
-
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>email address</h3>
+            <p class="small-letters">
+                m.aneesmct@gmail.com
+            </p>
         </div>
 
-        <div class="row">
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>contact number</h3>
+            <p class="small-letters">+923047604312</p>
+        </div>
 
-            <form action="" method="post">
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>address</h3>
+            <p>Zubair Hall, University of Engineering and Technology, Lahore, </p>
+        </div>
 
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box" inputmode="email">
+    </div>
 
-                <textarea name="Enter Your Message" placeholder="message" id="" cols="30" rows="10"></textarea>
+    <div class="row">
 
-                <input type="submit" class="btn" value="send message">
-
+        <div class="contact__content">
+            <h3 class="contact__title">Your Suggestions</h3>
+            <form action="mailto:m.aneesmct@gmail.com" method="post" class="contact__form" enctype="text/plain">
+                <div class="contact__form-div">
+                    <label for="name" class="contact__form-tag">Names</label>
+                    <input type="text" id="name" name="Name" placeholder="Insert your name" class="contact__form-input">
+                </div>
+                <div class="contact__form-div">
+                    <label for="email" class="contact__form-tag">E-Mail</label>
+                    <input type="email" id="email" name="Email" placeholder="Insert your email" class="contact__form-input">
+                </div>
+                <div class="contact__form-div">
+                    <label for="contact" class="contact__form-tag">Contact</label>
+                    <input type="tel" id="contact" name="Contact" placeholder="Format: +92XXXXXXXXXX" class="contact__form-input">
+                </div>
+                <div class="contact__form-div contact__form-area">
+                    <label for="message" class="contact__form-tag">Message</label>
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="   Write your Suggestions" class="contact__form-input"></textarea>
+                </div>
+                <div><br><br><button class="button-85">Send Message</button></div>
             </form>
-
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.9764313762944!2d74.34969727466171!3d31.5796941741869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b2413f598fb%3A0x7e755a3023f1451f!2sZubair%20Hall!5e0!3m2!1sen!2s!4v1706277270214!5m2!1sen!2s"
-                allowfullscreen="" loading="lazy"></iframe>
-
-
         </div>
 
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.9764313762944!2d74.34969727466171!3d31.5796941741869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b2413f598fb%3A0x7e755a3023f1451f!2sZubair%20Hall!5e0!3m2!1sen!2s!4v1706277270214!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
 
-    </section>
+    </div>
+
+</section>
+
 
     <!-- contact section ends -->
 
     <!-- footer section  -->
-    <footer class="footer">
+ <!--    <footer class="footer">
 
-        <a href="https://github.com/Muhammad-Anees99" class="fab fa-github"></a>
-        <a href="https://twitter.com/_Muhammad_Anees" class="fab fa-twitter"></a>
-        <a href="https://www.instagram.com/r_m_anees_" class="fab fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/muhammad-anees-engr" class="fab fa-linkedin"></a>
-        <a href="https://medium.com/@m.anees990011" class="fab fa-medium"></a>
-
-
-<br>
-
-        <div><span>&copy; Muhammad Anees </span> | All Rights Reserved!</div>
-        <br>
+       
+        
         <nav class="nav__menu">
             <a href="#home"><i class="fas fa-home home-icon"></i></a>
             <a href="#about"><i class="fas fa-user-circle about-me-icon"></i></a>
@@ -458,10 +488,39 @@
             <a href="#portfolio"><i class="fas fa-code projects-icon"></i></a>
             <a href="#contact"><i class="fas fa-envelope contact-me-icon"></i></a>
         </nav>
+    </footer> -->
+
+
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Muhammad Anees</h1>
+
+            <u1 class="footer__social">
+                <a href="https://github.com/Muhammad-Anees99" class="fab fa-github"></a>
+                <a href="https://twitter.com/_Muhammad_Anees" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/r_m_anees_" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammad-anees-engr" class="fab fa-linkedin"></a>
+                <a href="https://medium.com/@m.anees990011" class="fab fa-medium"></a>
+            </u1>
+
+            <span class="footer__copy">
+                &#169;2024 Muhammad Anees. All Rights Reserved
+            </span>
+        </div>
+       
     </footer>
-
-
-
+    <div class="end">
+    <nav class="nav__menu">
+        <a href="#home"><i class="fas fa-home home-icon"></i></a>
+        <a href="#about"><i class="fas fa-user-circle about-me-icon"></i></a>
+        <a href="#experience"><i class="fas fa-graduation-cap education-icon"></i></a>
+        <a href="#skill"><i class="fas fa-tools engineering-skills-icon"></i></i></a>
+        <a href="#service"><i class="fas fa-award certifications-icon"></i></a>
+        <a href="#portfolio"><i class="fas fa-code projects-icon"></i></a>
+        <a href="#contact"><i class="fas fa-envelope contact-me-icon"></i></a>
+    </nav>
+</div>
 
 
     <!-- custom js file link  -->

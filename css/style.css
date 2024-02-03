@@ -9,7 +9,7 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -27,7 +27,7 @@ html{
 }
 
 body{
-    background: #fcf2e8;
+    background: #81ebd2ea;
     padding-left: 30rem;
 }
 
@@ -96,84 +96,185 @@ p {
   
   
 
-.btn{
-    display: inline-block;
-    
-    margin-top: 1rem;
-    padding:.8rem 3rem;
-    background:var(--main-color);
-    color:#fff;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
 
-.btn :hover{
-    background:#111;
-    letter-spacing: .2rem;
-}
 
 header{
+    margin: 17px 5px 5px 15px;
     position: fixed;
     top:0; left:0; bottom:0;
-    background:#222;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    flex-flow: column;
-    padding:8rem 2rem;
-    width:30rem;
     text-align: center;
 }
-
-header .logo{
-    text-transform: uppercase;
-    color:#fff;
-    font-size: 3rem;
-    font-weight: bolder;
+#container{
+	display: block;
+	position: fixed;
+	flex-direction: column;
+	width:250px;
+	height: auto;
+	border-radius: 10px;
+	background: #ffffff6f;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.2);
+	transition: 1s;
+	
+	
 }
 
-header .logo span{
-    text-transform: uppercase;
-    color:var(--main-color);
+#container.active{
+	display: flex;
+	width: 70px;
+	
+	
+
+	
+}
+#container.active:hover{
+	display: flex;
+	width: 120px;
+	
+	
+	
+}
+#container .brand{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+	margin: 10px 0;
+	align-items: center;
+	justify-content: space-between;
 }
 
-header .navbar a{
-    display: block;
-    font-size: 2rem;
-    color:#fff;
-    margin:2rem 0;
-}
+#container.active .brand{
+	width: 100%;
+	align-items: center;
+	justify-content: center;
 
-header .navbar a:hover{
-    letter-spacing: .2rem;
-
-
-    
-    color:var(--main-color);
 }
 
 
-
-/* Initial Styles for Nav Icons */
-header .navbar a i {
-    
-    font-size: 4rem;
-    color: #fff; /* Set the initial color */
-    position: relative;
-    transition: color 0.9s ease; /* Add smooth color transition effect */
+#container.active .brand .logo,#container.active .brand h3,#container.active .search #search,#container.active .navbar ul li a span,#container.active .user img,#container.active .user .name{
+	
+	display: none;
 }
 
-/* Hover Effect for Nav Icons */
-header .navbar a:hover i {
-    letter-spacing: .2rem;
-    color: var(--main-color);
-    font-size: 5rem;
-    transform: scale(1.2);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.2);
+
+
+#container .brand a{
+	display: flex;
+	width: 30px;
+	height: 30px;
+	
+	align-items: center;
+	justify-content: center;
+	
+}
+#container .brand h3{
+	margin-right: 10px;
+	
+}
+#container.active .brand a,#container.active .brand a ion-icon{
+	display: flex;
+	width: 80%;
+	margin-top: 20px;
+	font-size: 40px;
 }
 
+
+#container .brand a ion-icon{
+	display: flex;
+	color: #191919;
+	font-size: 30px;
+	
+
+	background: transparent;
+}
+
+
+
+#container .navbar{
+	display: flex;
+	width: 90%;
+	height: auto;
+	margin: 10px 0;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+#container.active .navbar ul{
+	display: flex;
+	width: 90%;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+#container .navbar ul{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+	
+}
+#container .navbar ul li{
+	display: flex;
+	height: 40px;
+	width: 100%;
+	margin: 5px 0;
+	border-radius: 7px;
+	
+}
+#container .navbar ul li a{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	border-radius: 7px;
+	align-items: center;
+	justify-content: left;
+	
+}
+#container.active .navbar ul li a{
+	align-items: center;
+	justify-content: center;
+	
+
+}
+
+#container .navbar ul li a span{
+	display: flex;
+	color: #191919;
+	border-radius: 7px;
+	font-size: 20px;
+
+}
+#container .navbar ul li a ion-icon{
+	display: flex;
+	
+	font-size: 20px;
+	margin: 0 15px;
+	color: #191919;
+	font-size: 30px;
+}
+#container .navbar ul li a:hover,#container .navbar ul li a:hover span,#container .navbar ul li a:hover ion-icon{
+	font-weight: bold;
+	color: deepskyblue;
+	
+	
+	
+	
+}
+#container .navbar ul li a:hover ion-icon{
+	font-size: 50px;
+}
 
 
 #menu-bars{
@@ -252,7 +353,7 @@ header .navbar a:hover i {
 }
 
 .home .content h3{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color:#111;
     text-transform: uppercase;
 }

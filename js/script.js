@@ -34,6 +34,18 @@ document.querySelectorAll('a').forEach(links =>{
     }
 
 });
+
+
+
+var toggle = document.getElementById("toggle");
+var container = document.getElementById("container");
+
+toggle.onclick = function(){
+	container.classList.toggle('active');
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var animatedText = document.getElementById('animatedText');
     var cursor = animatedText.querySelector(':after');

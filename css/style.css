@@ -45,37 +45,7 @@ p {
     font-size: 3.5rem;
     position: relative;
   }
-  
-  #animatedText:after {
-    
-    content: " |";
-    border-right: 2px solid #000;
-    animation: blink-caret 0.5s step-end infinite;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: transparent;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #000;
-    }
-  }
-  
+
   .heading {
     text-align: center;
     font-size: 3.5rem;

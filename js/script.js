@@ -46,39 +46,3 @@ toggle.onclick = function(){
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var animatedText = document.getElementById('animatedText');
-    var cursor = animatedText.querySelector(':after');
-  
-    function restartAnimation() {
-      animatedText.style.width = '0';
-      animatedText.offsetHeight; // Trigger reflow
-      animatedText.style.animation = 'none';
-      animatedText.offsetHeight; // Trigger reflow
-      animatedText.style.animation = 'typing 4s steps(100, end) 1s 1 normal forwards';
-    }
-  
-    restartAnimation();
-    animatedText.addEventListener('animationend', function() {
-      setTimeout(function() {
-        restartAnimation();
-      }, 1000); // 10ms delay before clearing and restarting
-    });
-  
-    // Hide cursor when typing animation starts
-    animatedText.addEventListener('animationstart', function() {
-      cursor.classList.add('cursor-hidden');
-    });
-  
-    // Show cursor when typing animation ends
-    animatedText.addEventListener('animationiteration', function(event) {
-      if (event.elapsedTime === 5) { // 8s is the total duration including the pause time
-        cursor.classList.remove('cursor-hidden');
-      }
-    });
-  });
-  
-  
-  
-  
-  

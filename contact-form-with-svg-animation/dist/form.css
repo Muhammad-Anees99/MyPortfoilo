@@ -1,7 +1,6 @@
 svg {
   height: 23rem;
-  margin-right: 8rem;
-  
+  margin-right: 4rem;
 }
 
 #envelope {
@@ -54,17 +53,13 @@ svg {
     opacity: 1;
   }
 }
-
 .container {
-  height: 100vh;
-  background: #e5e7ea9b;
-  
+  height: fit-content;
   
 }
 
 form {
   min-width: 20rem;
-  
 }
 form .title {
   font-family: "Pacifico", cursive;
@@ -83,7 +78,7 @@ form .form-control.thick {
   padding: 0.5rem 3.5rem;
 }
 form .form-control:focus {
-  background-color: #f8f4f2;
+  background-color: #f2f6f8;
   border: none;
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
 }

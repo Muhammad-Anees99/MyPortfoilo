@@ -318,8 +318,12 @@ header{
 .home .content{
     flex:1 1 40rem;
     position: relative;
+    
 }
-
+.home .content a{
+margin-left: 180px;
+    
+}
 .home .content .hi{
     font-size: 2rem;
     color:var(--main-color);
@@ -378,7 +382,7 @@ header{
     text-align: center;
     }
 
-    
+
 .about {
     
     flex-wrap: wrap;
@@ -452,13 +456,7 @@ header{
    
 }
 
-.btn1 
-{
-    display: flex;
-      gap: 200px;
-      padding-left: 50px;
-  
-}
+
 /* CSS */
 .about .row-2 {
     display: flex;

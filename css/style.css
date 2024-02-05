@@ -370,7 +370,7 @@ header{
     
 }
 .home .content .box-container .box .text{
-    font-size: 2rem;
+    font-size: 1.9rem;
     color:#666;
     padding:.5rem 0;
     text-transform: initial;
@@ -457,10 +457,10 @@ header{
 }
 
 .about .content .box-container .box p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color:#666;
     padding:0.5rem 0.7rem;
-    margin-top: 2rem;
+    margin-top: 5px;
     
    
 }
@@ -472,78 +472,55 @@ header{
    
 }
 /* CSS */
-.about .row-2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+/* CSS */
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-.about .row-2 .skills {
-    position: relative;
-    flex: 1 1 40rem;
+.skill .box-container {
+  width: 100%; /* Set box-container to full width */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about .row-2 .skills .progress {
-
-   
-    padding: 1rem 0;
+.skill .progress {
+  background: var(--box-color);
+  border-radius: 5px;
+  position: relative;
+  flex: 1 1 calc(50% - 1.5rem); /* Adjust the width of each progress element */
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem; /* Add margin to create space between rows */
+  margin-right: 1.5rem; /* Add margin to create space between progress boxes */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.about .row-2 .skills .progress h3 {
- 
-    display: flex;
-    justify-content: space-between;
-    padding: 0.7rem 0;
-    font-size: 1.7rem;
-    color: #111;
-    font-weight: 400;
+.skill .progress h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: #111;
+  font-weight: 400;
 }
 
-.about .row-2 .skills .progress .bar {
-  
-    width: 100%;
-    background: var(--box-color);
-    overflow: hidden;
-    height: 1rem;
-    border-radius: 50rem;
+.skill .progress .bar {
+  width: 100%;
+  background: var(--box-color);
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; /* Adjust the top margin to vertically center the bar */
 }
 
-.about .row-2 .skills .progress .bar span {
-   
-    display: block;
-    height: 100%;
-    background: var(--main-color);
-    border-radius: 50rem;
-    
-}
-
-.about .row-2 .box-container {
-    
-    flex: 1 1 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.about .row-2 .box-container .box {
-    position: relative;
-    flex: 1 1 15rem;
-    background: var(--box-color);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.about .row-2 .box-container .box h3 {
-    color: var(--main-color);
-    font-size: 3rem;
-}
-
-.about .row-2 .box-container .box p {
-    color: #666;
-    font-size: 1.7rem;
-    padding-top: 0.5rem;
+.skill .progress .bar span {
+  display: block;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 50rem;
 }
 
 
@@ -552,10 +529,12 @@ header{
     flex-wrap: wrap;
     gap:1.5rem;
     
+    
 }
 
 .service .box-container .box{
     position: relative;
+    margin-top: 40px;
     flex:1 1 30rem;
     text-align: center;
     padding:2rem;
@@ -587,56 +566,70 @@ header{
     font-size: 1.7rem;
     padding-top: .5rem;
     text-transform: initial;
+    text-align: center;
 }
 
-.experience .box-container{
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .experience .box-container {
     display: flex;
     flex-wrap: wrap;
-   
-}
-
-.experience .box-container .box{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experience .box-container .box {
+    flex: 1 1 33rem;
+    margin: 1rem; /* Add some margin for spacing between boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     position: relative;
-    flex:1 1 33rem;
-    border-left: .2rem solid var(--main-color);
+    border-left: 0.2rem solid var(--main-color);
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem; 
-     
-}
-
-.experience .box-container .box::before{
+    padding-bottom: 2rem;
+  }
+  
+  .experience .box-container .box::before {
     content: '';
     position: absolute;
-    top:0; left:-1rem;
-    height:2rem;
-    width:2rem;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-    background:var(--main-color);
-}
-
-.experience .box-container .box .content{
-    background:var(--box-color);
-    padding:1.5rem ;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-   
-}
-
-.experience .box-container .box .content span{
-    color:#fff;
+    background: var(--main-color);
+  }
+  
+  .experience .box-container .box .content {
+    background: var(--box-color);
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  .experience .box-container .box .content span {
+    color: #fff;
     font-size: 2rem;
-    background:var(--main-color);
+    background: var(--main-color);
     border-radius: 50rem;
-    padding:.4rem 1rem;
-}
-
-.experience .box-container .box .content  h3{
+    padding: 0.4rem 1rem;
+  }
+  
+  .experience .box-container .box .content h3 {
     font-size: 2rem;
-    padding:.5rem 0;
-    color:#111;
-    
-}
+    padding: 0.5rem 0;
+    color: #111;
+  }
+  
 
 .experience .box-container .box .content p{
     font-size: 1.5rem;
@@ -711,6 +704,7 @@ header{
     gap:1.5rem;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .contact .icons-container .icons{
@@ -798,8 +792,9 @@ small {
   display: block;
   padding: 1rem 0;
 
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   transition: opacity 0.33s;
+  text-align: center;
 }
 textarea, input, button {
   line-height: 1.5rem;
@@ -815,8 +810,10 @@ textarea, input {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgb(229, 225, 187)' x='0' y='23' width='10' height='1'/></svg>");
 }
 textarea {
- width: 103rem;
- height: 40rem;
+    width: 100%;
+    max-width: 1080px; 
+    min-width: 375px;
+ height: 20rem;
  resize: none;
 }
 input {
@@ -831,7 +828,7 @@ button {
  padding: 0.5rem 1rem;
  border-radius: 0.25rem;
  background-color: rgba(78, 94, 114, 0.9);
- color: white;
+ color: rgba(255, 255, 255, 0.671);
  font-size: 1rem;
  transition: background-color 0.2s;
   &:hover,:focus {
@@ -846,28 +843,29 @@ textarea:focus {
   outline: none;
 }
 .wrapper {
- 
-  width: fit-content;
-  height: fit-content;
-  background-color: none;
 
- 
-  
+  height: fit-content;
+  background-color: var(--box-color);
+ border-radius: 10px;
+  width: 100%;
+  max-width: 1080px; /* Adjust the max-width based on your design */
+  min-width: 375px;
+  margin: 0 auto;   
 }
 .letter {
   position: relative;
   left: 0;
   right: 0;
   top: 0;
-  width:auto;
-  height: auto;
+  width:100%;
+ 
   margin: auto;
   perspective: 60rem;
 }
 .side {
   height: auto;
     width: auto;
-  background-color: #fcfcf8;
+  background-color: #fcfcf87b;
   outline: 1px solid transparent;
   &:nth-of-type(1) {
     padding: 2rem 2rem 0;
@@ -890,7 +888,7 @@ textarea:focus {
 }
 .envelope.front {
   width: 10rem;
-  height: 6rem;
+  height: 0rem;
   border-radius: 0 0 1rem 1rem;
   overflow: hidden;
   z-index: 9999;
@@ -900,7 +898,7 @@ textarea:focus {
   position: absolute;
   display: block;
   width: 12rem;
-  height: 6rem;
+  height: 0rem;
   background-color: #e9dc9d;
   transform: rotate(30deg);
   transform-origin: 0 0;
@@ -913,9 +911,9 @@ textarea:focus {
   transform-origin: 100% 0;
 }
 .envelope.back {
-  top: -4rem;
+  top: -1rem;
   width: 10rem;
-  height: 10rem;
+  height: 0rem;
   overflow: hidden;
   z-index: -9998;
   opacity: 0;
@@ -965,8 +963,7 @@ textarea:focus {
 .centered {
   position: relative;
   left: 0;
-  right: 0;
-  margin: 0rem 0rem 0rem;
+  right: 0; 
 }
 @keyframes closeLetter {
    50% {transform: rotateX(-90deg);}
@@ -990,21 +987,6 @@ textarea:focus {
   100%{transform: translateY(-8rem) scale(0.3, 0.5);}
 }
 
-/*
-@keyframes pushLetter {
-  0% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  50% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
-  100% {transform: translateY(-8rem) scale(0.3, 0.5);}
-}
-*/
-
-
-
-
-
-
-
 footer a{
     font-size: 3rem;
     color:#fff;
@@ -1015,12 +997,12 @@ footer a{
     color:var(--main-color);
 }
 footer{
-    margin-top: 4rem;
+    margin-top: 0rem;
     font-size: 2rem;
-    padding:4.5rem;
+    padding:0rem;
     text-align: center;
     color:#fff;
-    background: #000;
+    
     position: relative;
 }
 
@@ -1029,7 +1011,38 @@ footer{
 }
 
 
-
+.footer__container{
+    padding: 0rem 0 0rem;
+  }
+  
+  .footer__title,
+  .footer__link{
+    color: #111;
+  }
+  
+  .footer__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+  
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+  }
+  .footer__social  a{
+  
+      color: #111;
+    }
+  .footer__copy{
+    display: block;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--container-color);
+    text-align: center;
+    font-size: var(--smaller-font-size);
+  }
 
 
 
@@ -1104,72 +1117,6 @@ footer{
 .button-86:active::after {
   transition: 0s;
   transform: translate(0, 5%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-  background-color: var(--first-color);
-}
-
-.footer__container{
-  padding: 2rem 0 6rem;
-}
-
-.footer__title,
-.footer__link{
-  color: #111;
-}
-
-.footer__title{
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.footer__list{
-  display: flex;
-  justify-content: center;
-  column-gap: 1.5rem;
-  margin-bottom: 2rem;
-  list-style-type: none;
-}
-
-.footer__social {
-  display: flex;
-  justify-content: center;
-  column-gap: 1.25rem;
-}
-.footer__social  a{
-
-    color: #111;
-  }
-.footer__social-link{
-  background-color: var(--body-color);
-  color: var(--first-color);
-  padding: .25rem;
-  border-radius: .25rem;
-  font-size: 1rem;
-  display: inline-flex;
-}
-
-.footer__copy{
-  display: block;
-  margin-top: 4.5rem;
-  color: var(--container-color);
-  text-align: center;
-  font-size: var(--smaller-font-size);
-
 }
 
 

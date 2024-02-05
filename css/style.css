@@ -313,6 +313,7 @@ header{
 
 .home .content .box-container .image img{
     width:100%;
+    height: 100%;
 }
 
 .home .content{
@@ -345,6 +346,7 @@ header{
 }
 
 .home .content .box-container .box{
+    
     text-transform: initial;
     position: relative;
     flex:1 1 30rem;
@@ -357,6 +359,7 @@ header{
     
 }
 .home .content .box-container .box .info {
+ 
     font-size: 2.5rem;
   
     color:#111;
@@ -449,13 +452,15 @@ header{
     background:var(--box-color);
     border-radius: .8rem;
     box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   
     
 }
 
 .about .content .box-container .box p{
     font-size: 1.7rem;
     color:#666;
-    padding:.5rem 0;
+    padding:0.5rem 0.7rem;
+    margin-top: 2rem;
     
    
 }
@@ -810,8 +815,8 @@ textarea, input {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgb(229, 225, 187)' x='0' y='23' width='10' height='1'/></svg>");
 }
 textarea {
- width: 100%;
- height: 20rem;
+ width: 103rem;
+ height: 40rem;
  resize: none;
 }
 input {
@@ -842,8 +847,8 @@ textarea:focus {
 }
 .wrapper {
  
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   background-color: none;
 
  
@@ -961,7 +966,7 @@ textarea:focus {
   position: relative;
   left: 0;
   right: 0;
-  margin: 0rem 22rem 0rem;
+  margin: 0rem 0rem 0rem;
 }
 @keyframes closeLetter {
    50% {transform: rotateX(-90deg);}

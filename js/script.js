@@ -44,5 +44,10 @@ toggle.onclick = function(){
 	container.classList.toggle('active');
 }
 
+function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
 
 

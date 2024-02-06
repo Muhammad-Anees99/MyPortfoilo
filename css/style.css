@@ -54,6 +54,7 @@ p {
 
 
 .heading {
+    position: relative;
     text-align: center;
     font-size: 3.5rem;
     padding-bottom: 1rem;
@@ -62,6 +63,7 @@ p {
 }
 
 .heading span {
+    position: relative;
     color: var(--main-color);
     text-transform: uppercase;
 }
@@ -480,6 +482,8 @@ top: 7rem;
 .about .content h3 {
     color: #333;
     font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .about .content h3 span {
@@ -527,6 +531,8 @@ top: 7rem;
     color: var(--main-color);
     padding: .5rem 0;
 }
+
+
 .skill {
     display: flex;
     flex-wrap: wrap;
@@ -644,7 +650,14 @@ top: 7rem;
     justify-content: center;
     align-items: center;
 }
+.experience .box-container .h3 span{
+    position: relative;
+    font-size: 3.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
 
+}
 .experience .box-container .box {
     flex: 1 1 33rem;
     margin: 1rem;
@@ -669,6 +682,7 @@ top: 7rem;
     width: 2rem;
     border-radius: 50%;
     background: var(--main-color);
+    
 }
 
 .experience .box-container .box .content {

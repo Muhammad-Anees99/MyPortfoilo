@@ -109,11 +109,32 @@
 
 .share .contact__container  .contact__content .contact__form-div .contact__form-input:hover {
    
-    background: white; /* Updated background color */
+    background: var(--box-color); /* Updated background color */
  border: none;
  color: #111;
+ 
  
  filter: brightness(1.1);
     transition: all 0.3s ease-in-out;
    
 }
+.share .contact__container .contact__content:hover {
+    background: rgba(0, 10, 51, 0.474);
+    border-left: solid #ff8c00;
+    /* Updated border color */
+    border-right: solid #4caf50;
+    /* Updated border color */
+    border-top: solid #2196f3;
+    /* Updated border color */
+    border-bottom: solid #e91e63;
+    /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8);
+    /* Updated box shadow */
+    border-radius: 1rem;
+    border-width: 0.3rem;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px);
+    /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+

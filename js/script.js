@@ -37,17 +37,26 @@ document.querySelectorAll('a').forEach(links =>{
 
 
 
-var toggle = document.getElementById("toggle");
-var container = document.getElementById("container");
+// Dark Mode
+// script.js
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
 
-toggle.onclick = function(){
-	container.classList.toggle('active');
+// Check for user's dark mode preference in local storage
+const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+// Apply dark mode if it's enabled
+if (isDarkMode) {
+    body.classList.add('dark-mode');
 }
 
-function addClass() {
-  document.body.classList.add("sent");
-}
+// Toggle dark mode on button click
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const enableDarkMode = body.classList.contains('dark-mode');
 
-sendLetter.addEventListener("click", addClass);
+    // Save user's dark mode preference to local storage
+    localStorage.setItem('darkMode', enableDarkMode ? 'enabled' : 'disabled');
+});
 
 

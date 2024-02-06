@@ -1,0 +1,176 @@
+:root {
+    --main-color: #e38528;
+    --box-color: #ffffff6f;
+    --main-color-light: #007bff;
+    /* Light mode main color */
+    --main-color-dark: #61dafb;
+    /* Dark mode main color */
+    --box-color-light: #ffffff;
+    /* Light mode box color */
+    --box-color-dark: #b0d2f356;
+    /* Dark mode box color */
+    --text-color-light: #111111;
+    /* Light mode text color */
+    --text-color-dark: #eeeeee;
+    /* Dark mode text color */
+
+}
+
+body.dark-mode .area {
+    background-color: #000; /* Adjust the base color */
+    background-image: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); /* Adjust the gradient colors */
+    color: #fff; /* Adjust the text color */
+}
+
+
+.dark-mode .heading {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode #container .brand h3 {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode #container .brand a ion-icon {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode #container .navbar ul li a span {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode #container .navbar ul li a ion-icon {
+
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode {
+    --main-color: var(--main-color-dark);
+    --box-color: var(--box-color-dark);
+    --text-color: var(--text-color-dark);
+}
+
+.dark-mode .home .content .hi {
+    color: var(--main-color-dark);
+}
+
+.dark-mode .home .content h3 {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .home .content h3 span {
+    color: var(--main-color-dark);
+}
+
+.dark-mode .home .content .box-container .image {
+    border: 1rem solid var(--box-color-dark);
+}
+
+.dark-mode .home .content .box-container .box .text {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode .home .content .box-container .box .info {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .home .content .box-container .box:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .about .content .box-container .box:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .experience .box-container .box .content:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .skill .box-container .progress:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .service .box-container .box:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .contact .icons-container .icons:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+
+.dark-mode .about .content h3 {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode .about .content .box-container .box p {
+    color: rgb(197, 194, 194);
+}
+.dark-mode .about .content .box-container .box p a{
+    color: rgb(197, 194, 194);
+}
+.dark-mode .skill .progress h3 {
+    color: rgb(197, 194, 194);
+}
+.dark-mode .portfolio .box-container .box:hover {
+    background: rgba(0, 10, 51, 0.474);
+}
+.dark-mode .portfolio .box-container .box h3 {
+    color: rgb(197, 194, 194);
+}
+.dark-mode .portfolio .box-container .box{
+    border-color: rgb(197, 194, 194);
+}
+.dark-mode .service .box-container .box h3 a{
+    color: rgb(197, 194, 194);
+}
+.dark-mode .service .box-container .box i {
+    color: #111;
+}
+
+.dark-mode .service .box-container .box p {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode .experience .box-container .box .content p {
+    color: rgb(197, 194, 194);
+}
+.dark-mode .experience .box-container .box .content h3 {
+    
+    color: rgb(197, 194, 194)
+}
+.dark-mode .contact .icons-container .icons i{
+    color: #111;
+}
+.dark-mode .contact .icons-container .icons p {
+    color: rgb(197, 194, 194);
+}
+.dark-mode .contact .icons-container .icons h3 {
+    color: rgb(197, 194, 194);
+   
+}
+.dark-mode .footer__title,
+.footer__link {
+    color: rgb(197, 194, 194);
+}
+
+.dark-mode .footer__social a {
+
+    color: rgb(197, 194, 194);
+}
+.dark-mode .share {
+    color: rgb(197, 194, 194);
+    border: #007bff;
+}
+.dark-mode .share .contact__container .contact__content .contact__form-div .contact__form-input{
+    color: rgb(197, 194, 194);
+    border-color: #7bb3ee;
+}
+.dark-mode .share .contact__container .contact__content:hover{
+    background: rgba(0, 10, 51, 0.474);
+}
+.dark-mode .button-86::before{
+    background: #71b2f8d5;
+}
+.dark-mode .button-86::after {
+    background: #9db5cd8f;
+}

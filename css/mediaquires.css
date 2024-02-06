@@ -1,0 +1,164 @@
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .share .contact__container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    
+    }
+}
+/* Mobile devices (320–480px) */
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+    .home p {
+        font-size: 14px;
+    }
+
+    .home .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Small screens and laptops (769–1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .home {
+        padding: 30px;
+    }
+
+    .home h3 {
+        font-size: 28px;
+    }
+
+    .home p {
+        font-size: 18px;
+    }
+
+    .home .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Desktops and large screens (1025–1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        font-size: 22px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .home {
+        padding: 40px;
+    }
+
+    .home h3 {
+        font-size: 32px;
+    }
+
+    .home p {
+        font-size: 20px;
+    }
+
+    .home .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Larger desktops and high-resolution displays (1201px and above) */
+@media only screen and (min-width: 1201px) {
+    header {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .home {
+        padding: 50px;
+    }
+
+    .home h3 {
+        font-size: 36px;
+    }
+
+    .home p {
+        font-size: 22px;
+    }
+
+    .home .btn {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+}
+
+/* media queries  */
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header {
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+    }
+
+    .cursor-1,
+    .cursor-2 {
+        display: none;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .experience .box-container .box {
+        padding-right: 0;
+    }
+
+}

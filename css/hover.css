@@ -1,0 +1,119 @@
+
+.home .content .box-container .box:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.about .content .box-container .box:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.experience .box-container .box .content:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px);
+    transform: scale(1.1); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.skill .box-container .progress:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.service .box-container .box:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.portfolio .box-container .box:hover img {
+    height: 75%;
+    width: 75%;
+}
+
+.portfolio .box-container .box:hover {
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8);  
+    filter: brightness(1.2);
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+
+}
+
+.contact .icons-container .icons:hover {
+    padding: 3rem;
+    background: rgba(255, 206, 86, 0.7); /* Updated background color */
+    border-radius: 1rem;
+    border-width: 1rem;
+    border-left: solid #ff8c00; /* Updated border color */
+    border-right: solid #4caf50; /* Updated border color */
+    border-top: solid #2196f3; /* Updated border color */
+    border-bottom: solid #e91e63; /* Updated border color */
+    box-shadow: 0 .5rem 1rem rgba(255, 152, 0, 0.8); /* Updated box shadow */
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px); /* Move the box along y-axis */
+    filter: brightness(1.2);
+}
+
+.share .contact__container  .contact__content .contact__form-div .contact__form-input:hover {
+   
+    background: white; /* Updated background color */
+ border: none;
+ color: #111;
+ 
+ filter: brightness(1.1);
+    transition: all 0.3s ease-in-out;
+   
+}

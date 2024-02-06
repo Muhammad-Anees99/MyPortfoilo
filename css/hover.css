@@ -15,7 +15,7 @@
 }
 
 .about .content .box-container .box:hover {
-    padding: 3rem;
+    padding: 2rem;
     background: rgba(255, 206, 86, 0.7); /* Updated background color */
     border-radius: 1rem;
     border-width: 1rem;

@@ -52,6 +52,9 @@ body.dark-mode .area {
     --box-color: var(--box-color-dark);
     --text-color: var(--text-color-dark);
 }
+.dark-mode .home .content .box-container .image img {
+    filter: brightness(50%);
+}
 
 .dark-mode .home .content .hi {
     color: var(--main-color-dark);
@@ -81,6 +84,9 @@ body.dark-mode .area {
     background: rgba(0, 10, 51, 0.474);
 }
 
+.dark-mode .about .image img {
+    filter:brightness(70%);
+}
 .dark-mode .about .content .box-container .box:hover {
     background: rgba(0, 10, 51, 0.474);
 }
@@ -204,13 +210,16 @@ body.dark-mode .area {
 }
 
 .dark-mode .button-86::before {
-    background: #71b2f8d5;
+    background: var(--main-color-dark);
 }
 
 .dark-mode .button-86::after {
-    background: #9db5cd8f;
+    background: var(--main-color-dark);
+    
 }
-
+.dark-mode .button-86 {
+    color: #000000;
+}
 .dark-mode .share .contact__container .contact__content .contact__form-div .contact__form-input:hover {
 
 

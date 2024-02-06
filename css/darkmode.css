@@ -214,7 +214,7 @@ body.dark-mode .area {
 }
 
 .dark-mode .button-86::after {
-    background: var(--main-color-dark);
+    background:#b0d2f356
     
 }
 .dark-mode .button-86 {

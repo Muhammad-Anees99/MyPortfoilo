@@ -25,7 +25,10 @@ body.dark-mode .area {
     /* Adjust the text color */
 }
 
-
+.dark-mode #container {
+    background-color: rgba(0, 10, 51, 0.907);
+    /* Adjust the base color */        
+}
 .dark-mode .heading {
     color: rgb(197, 194, 194);
 }

@@ -56,6 +56,9 @@
         width: 0%;
         height: 0%;
     }
+    .dark-mode .home .content .box-container .image {
+        border: none;
+    }
     .home .content .box-container .box .info {
         font-size: 2rem;
         padding: .5rem 0;

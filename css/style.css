@@ -86,13 +86,13 @@ header {
 
 #darkModeToggle {
     position: fixed;
-    top: 6rem;
-    right: 2rem;
+    top: 7rem;
+    right: 3rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     border: none;
     border-radius: 50%;
     background-color: transparent;

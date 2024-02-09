@@ -6,32 +6,298 @@
     }
 }
 /* Mobile devices (320–480px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
+    section {
+        padding: 1rem 9%;
+        min-height: 0vh;
+        gap: 0.75rem;
+    }
     header {
-        font-size: 16px;
+        font-size: 2rem;
     }
-
-    .navbar a {
-        font-size: 12px;
+    .heading {
+        font-size: 2.5rem;
     }
-
     .home {
         padding: 20px;
+        gap: 0.75;
     }
 
-    .home h3 {
-        font-size: 18px;
+    .home .content .hi {
+        font-size: 2.5rem;
     }
+    
+    .home .content h3 {
+        font-size: 3rem;
+    }
+    #animatedText {
+  
+        font-size: 2rem;
+    }
+    .home .content .box-container {
+        margin-top: 1rem;
+    
+        gap: .75rem;
+    }
+    
+    .home .content .box-container .box {
+        flex: 1 1 20rem;
+        padding: 1rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .home .content .box-container .image {
+     
+        overflow: hidden;
+        border: none;
+        box-shadow:none;
+    }
+    .home .content .box-container .image img {
+        width: 0%;
+        height: 0%;
+    }
+    .home .content .box-container .box .info {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+    
+    .home .content .box-container .box .text {
+        font-size: 1.4rem;
+        padding: .5rem 0;
+    }
+    .about {
+        gap: 0.75rem;
+    }
+    
+    .about .image {
+        flex: 1 1 fit-content;
+       text-align: center;
+    }
+    .about .image img {
+        height: 100%;
+        width: 74%;
+    }
+    
+    .about .content {
+        flex: 1 1 20;
+    }
+.about .content h3{
+    font-size: 2.5rem;
+}
+.about .content h3 span {
+    
+    font-size: 2.5rem;
+}
 
-    .home p {
-        font-size: 14px;
-    }
+.about .content .box-container {
+    padding-bottom: 1rem;
+    gap:.75rem;
+}
 
-    .home .btn {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-   
+.about .content .box-container .box {
+    flex: 1 1 fit-content ;
+    padding: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.about .content .box-container .box p {
+    font-size: 1.4rem;
+    margin-top: 1px;
+}
+
+.about .content .box-container .box p span {
+    font-size: 1.5rem;
+}
+.about .content .box-container .box p a {
+    font-size: 1.4rem;
+}
+
+.button-86 {
+    margin: 0 20px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+    /* Adjust the margin as needed for spacing */
+}
+.experience{
+    height: 80vh;
+}
+.experience h3{
+    font-size: 2.5rem;
+}
+
+.experience .box-container {
+    align-items: center;
+}
+.experience .box-container .h3 span{
+    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.experience .box-container .box {
+    flex: 1 1 30rem;
+    margin-top: 0.75rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    /* Add some margin for spacing between boxes */
+    border-left: none;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.experience .box-container .box::before {
+    content: none;
+}
+
+.experience .box-container .box .content span {
+    font-size: 1.5rem;
+}
+
+.experience .box-container .box .content h3 {
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+}
+
+.experience .box-container .box .content p {
+    font-size: 1.4rem;
+}
+
+
+.skill {
+    gap: .75rem;
+}
+
+.skill .box-container {
+    margin-top: 1rem;
+}
+
+.skill .progress {
+    border-radius: 5px;
+    flex: 1 1 25rem;
+    /* Adjust the width of each progress element */
+    padding: 1rem 2rem;
+    margin-bottom: 0.75rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.skill .progress h3 {
+    font-size: 1.5rem;
+}
+
+.skill .progress .bar {
+    border-radius: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 0.5rem;
+    /* Adjust the top margin to vertically center the bar */
+}
+
+.skill .progress .bar span {
+    border-radius: 5rem;
+}
+
+.service .box-container {
+    gap: 0.75rem;
+}
+
+.service .box-container .box {
+    margin-top: 0.75rem;
+    flex: 1 1 25rem;
+    padding: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.service .box-container .box h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.service .box-container .box p {
+    font-size: 1.3rem;
+}
+
+.portfolio .box-container {
+    gap: 0.75rem;
+}
+
+.portfolio .box-container .box {
+    flex: 1 1 25rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 23rem;
+    border: 0.5rem solid #fff;
+}
+
+.portfolio .box-container .box h3 {
+    font-size: 1.4rem;
+}
+
+.portfolio .box-container .box .icons a {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.4rem;
+}
+
+.contact
+{
+    gap: 0.75rem;
+}
+
+.contact .icons-container {
+    margin-top: 0.75rem;
+}
+
+.contact .icons-container .icons {
+    flex: 1 1 25rem ;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact .icons-container .icons i {
+    font-size: 1.4rem;
+}
+
+.contact .icons-container .icons h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.contact .icons-container .icons p {
+    font-size: 1.4rem;
+}
+
+.contact .row {
+    gap: 0.75rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.footer__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+
+.footer__copy {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
 }
 
 /* Small screens and laptops (769–1024px) */

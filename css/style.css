@@ -84,65 +84,39 @@ header {
     text-align: center;
 }
 
-.button-87 {
+#darkModeToggle {
+    position: fixed;
+    top: 6rem;
+    right: 2rem;
     display: inline-flex;
-    position:absolute;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    z-index: 9999; /* Ensure the button appears above other content */
 }
 
-.mode-icon {
-    margin-right: 0.5rem;
-    font-size: 3rem;
+#darkModeToggle .mode-icon {
+    margin: 0;
 }
 
 .light-mode-icon {
-    display: none; /* Initially hide light mode icon */
+    display: none;
 }
 
 .dark-mode .light-mode-icon {
-    display: inline; /* Display light mode icon in dark mode */
- 
+    display: inline;
 }
 
 .dark-mode .dark-mode-icon {
-    display: none; /* Hide dark mode icon in dark mode */
-   
+    display: none;
 }
 
-/* New styles for the dark mode switch button */
-#darkModeToggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.25rem;
-    background-color: var(--box-color); /* Change to your preferred background color */
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#darkModeToggle:hover {
-    /* Change to your preferred hover background color */
-font-size: larger;
-}
-
-
-#darkModeToggle{
-left: end;
-right: 2rem;
-top: 7rem;
-
-  
-}
 #container {
     display: block;
     position: fixed;

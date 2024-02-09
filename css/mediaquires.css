@@ -113,15 +113,7 @@
     font-size: 1.8rem;
 }
 
-.about .cotent .button-container {
-  
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    /* Adjust the margin as needed for spacing */
-}
+
 .experience{
     height: 60vh;
 }

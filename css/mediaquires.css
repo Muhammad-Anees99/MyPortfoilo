@@ -6,7 +6,7 @@
     }
 }
 /* Mobile devices (320–480px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
     section {
         padding: 1rem 9%;
         min-height: 0vh;
@@ -113,8 +113,8 @@
     font-size: 1.8rem;
 }
 
-.button-86 {
-  margin: 0 40rem;
+.about .cotent .button-container {
+  
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -123,7 +123,7 @@
     /* Adjust the margin as needed for spacing */
 }
 .experience{
-    height: 80vh;
+    height: 60vh;
 }
 .experience h3{
     font-size: 3rem;
